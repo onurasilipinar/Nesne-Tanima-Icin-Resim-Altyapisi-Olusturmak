@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/ilk.css' %}">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" >
+</head>
+<body>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #343a40!important">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="{% static 'images/logo1.png' %}" style="width: 40px; height: 30px; border: 0ch;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% static 'css/ilk.css' %}">Giriş</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Proje
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{% static 'css/ilk.css' %}">Proje Ekle</a>
+                    <a class="dropdown-item" href="projeler.html">Projeler</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Sayfa içi arama.." aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Ara</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
+
+
+      <div class="btn-group btn-group-lg" role="group" aria-label="Basic checkbox toggle button group">
+        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+        <label class="btn btn-success" for="btncheck1">İmge Yükle
+            <div class="input-group ">
+            <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+
+          </div>
+        </label>
+
+        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+        <label class="btn btn-success w-25" for="btncheck2">İmge Etiketle</label>
+
+        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+        <label class="btn btn-success w-25" for="btncheck3">Etiket Ekle</label>
+
+        <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+        <label class="btn btn-success w-25" for="btncheck4">Projeyi paylaş</label>
+
+        <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+        <label class="btn btn-success w-25" for="btncheck4">Kaydet</label>
+      </div>
+
+
+
+
+
+
+      <style>
+        img {
+          width: 55%;
+          height: 50%;
+          border: 1px solid black;
+          display: inline;
+        }
+        </style>
+        </body>
+        <body>
+
+        <img onmousemove="myFunction(event)" src="{% static 'images/logo1.png' %}">
+
+        <p id="demo"></p>
+
+        <script>
+        function goster(){
+          var foto;
+          foto =document.getElementById("inputGroupFile04")
+          console.log(foto);
+        }
+        function myFunction(e) {
+          var x = e.clientX;
+          var y = e.clientY;
+          var coor = "Coordinates: (" + x + "," + y + ")";
+          document.getElementById("demo").innerHTML = coor;
+        }
+        </script>
+
+
+
+
+
+
+     <script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+	<script src = "{% static 'js/bootstrap.min.js' %}"></script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %} Kayıt {% endblock title %}
+
+{% block content %}
+<div class="rounded border border-success">
+<h2>Kayıt</h2>
+<form method='post' style="color: black">
+    {% csrf_token %}
+    {{ form |crispy }}
+    <button class="btn btn-success" type="submit">Kaydol</button>
+</form>
+</div>
+
+{% endblock content %}

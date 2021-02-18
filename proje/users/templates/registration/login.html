@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %} Giriş {% endblock title %}
+
+{% block content %}
+
+    <div class="rounded border border-success">
+<h2>Giriş</h2>
+<form method='post' style="color: black">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button class="btn btn-success" type="submit">Giriş</button>
+</form>
+    </div>
+{% endblock content %}

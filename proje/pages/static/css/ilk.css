@@ -1,0 +1,48 @@
+body{
+
+    width: 95%;
+
+    padding-left: 3rem;
+    padding-right: 0rem;
+
+
+}
+
+.card-group{
+    padding-top: 3rem;
+}
+form{
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: black;
+
+
+}
+.bg-dark {
+    background-color: #343a40!important;
+}
+/*
+form span{
+
+    padding-left: 35rem;
+}
+*/
+
+.col-12 button{
+    margin: 1rem;
+    margin-left: 0rem;
+
+}
+#inputGroupFile04{
+    margin-left: 1rem;
+}
+#carouselExampleIndicators{
+    padding-top: 10rem;
+}
+.btn-group-lg{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 50rem;
+    float: left;
+}
